@@ -1,7 +1,7 @@
 from typing import Dict
 import configparser
 
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request, jsonify
 import requests
 
 
@@ -25,8 +25,19 @@ def lookup():
     return html
 
 
+@app.route('/all')
+def all_temp():
+    config = configparser.ConfigParser()
+    config.read('config.ini')
+    filename = config['DATABASE']['path']
+    db = EtymologyDatabase(filename)
+    data = db.get_word_all()
+    return jsonify(data)
+
+
 def build_page_word(word: str) -> str:
     word = word.lower()
+    word = word.strip()
     urls = get_urls_for_word(word)
     record_word_and_urls_to_database(word, urls)
     html = create_word_page(word, urls)

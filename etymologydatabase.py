@@ -2,7 +2,7 @@
 """
 from typing import Optional, Dict
 
-from database import Database
+from database import Database, Results
 
 
 class EtymologyDatabase(Database):
@@ -42,3 +42,8 @@ class EtymologyDatabase(Database):
         for name, url in urls.items():
             self.add_link(word_id, name, url, date_added, date_modified)
         return
+
+    def get_word_all(self):
+        cursor = self.query('''SELECT * FROM word''')
+        return Results(cursor).fetchall_dict_factory()
+
