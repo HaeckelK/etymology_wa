@@ -8,9 +8,14 @@ Searched for words and status 200 urls are saved in sqlite database (path specif
 ## Initial Setup
 - Copy config_template.ini to config.ini and add database path included .db extension.
 - run python3 initial_setup.py
+- set PORT in launch.sh
 
 ## Production
-
+### Launching
+On server
+```bash
+bash launch.sh
+```
 
 ## Development
 ### Launching
