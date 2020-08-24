@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.0] - 2020-08-24
+### Features
+- add launch.sh to run on launch on server
+
 ## [1.1.0] - 2020-08-24
 ### Features
 - view all search history as json in all page
