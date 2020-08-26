@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.4.0] - 2020-08-26
+### Features
+- feat: update results page to bootstrap
+
 ## [1.3.0] - 2020-08-26
 ### Features
 - feat: add bootstrap base.html and make index child page
