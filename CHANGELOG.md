@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.4.1] - 2020-08-26
+### Features
+- feat: bigger history link on main page
+
 ## [1.4.0] - 2020-08-26
 ### Features
 - feat: update results page to bootstrap
