@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.3.0] - 2020-08-26
+### Features
+- feat: add bootstrap base.html and make index child page
+
 ## [1.2.0] - 2020-08-24
 ### Features
 - add launch.sh to run on launch on server
