@@ -1,13 +1,10 @@
-<!doctype html>
-<html lang="en">
-  <head>
+{% extends "base.html" %}
+{% block title %}etymology index{% endblock %}
 
-  </head>
-  <body>
-      <a href='/all'>history</a>
-      <h1>Lookup word</h1>
-      <form action="/lookup" method="get">
-        <input type="text" id="word" name="word">
-      </form>
- </body>
-</html>
+{% block content %}
+<a href='/all'>history</a>
+<h1>Lookup word</h1>
+<form action="/lookup" method="get">
+  <input type="text" id="word" name="word">
+</form>
+{% endblock %}
