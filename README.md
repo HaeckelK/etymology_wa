@@ -36,7 +36,7 @@ flask run --port=5007 --host=0.0.0.0
 ```
 ### Releasing
 ```bash
-bump2version minor --dry-run --verbose
+bump2version minor --message 'build: {new_version}' --dry-run --verbose
 bump2version major
 ```
 
