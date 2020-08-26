@@ -21,8 +21,12 @@ def lookup():
     word = request.args.get('word')
     if not word:
         return redirect(url_for('index'))
-    html = build_page_word(word)
-    return html
+    
+    word = word.lower()
+    word = word.strip()
+    urls = get_urls_for_word(word)
+    record_word_and_urls_to_database(word, urls)
+    return render_template('results_page.html', word=word, urls=urls)
 
 
 @app.route('/all')
