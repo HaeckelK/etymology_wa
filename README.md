@@ -1,4 +1,4 @@
-# etymology_wa 1.4.1
+# etymology_wa 1.5.0
 
 ## Introduction
 Small scale flask web app to provide links to etymology resources for a given word. Landing page provides input form to enter word, which will check search urls for wiktionary, etymologyonline and dictionary.com. If the search urls are status 200, will redirect to a html page for the word with the links presented.
