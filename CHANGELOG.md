@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.5.0] - 2020-08-31
+### Features
+- feat: open links in new tabs
+
 ## [1.4.1] - 2020-08-26
 ### Features
 - feat: bigger history link on main page
