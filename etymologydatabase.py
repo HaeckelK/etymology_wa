@@ -46,4 +46,3 @@ class EtymologyDatabase(Database):
     def get_word_all(self):
         cursor = self.query('''SELECT * FROM word''')
         return Results(cursor).fetchall_dict_factory()
-
