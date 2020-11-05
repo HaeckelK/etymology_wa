@@ -12,8 +12,6 @@ import json
 import pytest
 import requests
 
-import app
-
 
 PORT = 5007
 
